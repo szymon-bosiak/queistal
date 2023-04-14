@@ -1,0 +1,132 @@
+/* GENERAL */
+
+.hero_container {
+    z-index: 110;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-flex {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* NAV */
+
+.nav {
+    padding: 2.5rem 2rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-contact {
+    font-size: 21px;
+    font-weight: 400;
+    padding: .2rem 1.1rem;
+    border: 1.9px solid var(--txt);
+    border-radius: 2rem;
+}
+
+.nav-main img {
+    width: 4rem;
+    transform: translateY(-1.1rem);
+}
+
+.nav-logo {
+    height: 3.2rem;
+    transform: translateY(-1.3rem);
+    margin-right: 1.3rem;
+}
+
+/* HEADING */
+
+.hero_container-heading {
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.hero_container-heading-mid h3 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero_container-heading-grid-lower {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.hero_container-heading-big h1 {
+    text-align: right;
+    line-height: 90px;
+    font-size: 85px;
+    font-weight: 500;
+}
+
+.hero_container-heading-small {
+    display: flex;
+    align-items: center;
+}
+
+.hero_container-heading-small p {
+    font-size: 18px;
+    max-width: 10rem;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+/* HERO IMG */
+
+.hero_container-triangle-upper {
+    position: absolute;
+    right: 13%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 0;
+	height: 0;
+	border-left: 6rem solid transparent;
+	border-right: 6rem solid transparent;
+	border-top: 3.8rem solid var(--main-bg);
+}
+
+.hero_container-triangle-lower {
+    transform: translateY(-14.5rem);
+    left: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    width: 0;
+    height: 0;
+    border-bottom: 14.3rem solid var(--main-bg);
+    border-right: 18rem solid transparent;
+}
+
+.hero_container-img img {
+    width: 95vw;
+    max-width: 100rem;
+    max-height: 32rem;
+    object-fit: cover;
+    object-position: 5% 95%;
+}
+
+.hero_container-txt {
+    position: absolute;
+    transform: translateY(-4.1rem);
+}
+
+.hero_container-txt h3 {
+    font-size: 27px;
+    font-weight: 200;
+}
+
+.hero_container-txt p {
+    font-size: 27px;
+    font-weight: 400;
+}

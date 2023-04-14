@@ -1,0 +1,56 @@
+/* GLOBAL */
+
+:root {
+  --dark-brown: #262322;
+  --medium-brown: #594736;
+  --light-brown: #8C6B4F;
+  --beige: #BFA288;
+  --dark-purple: #261722;
+  --dark-green: #3B594E;
+  --pale-green: #76A694;
+  --dark-blue: #323E59;
+  --pale-blue: #556DA6;
+
+  --main-bg: #E3EBD4;
+  --txt: #282522;
+  --white: #fff;
+
+  --test-1: #d3b488cc;
+  --test-2: #c4b29a;
+  --test-3: #BFAE99;
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--txt);
+  font-family: 'Oswald', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 19px;
+  font-weight: 300;
+  z-index: 10;
+}
+
+body {
+  background-color: var(--main-bg);
+  height: 100%;
+  width: 100%;
+}
+
+/* PATTERN */
+
+.bg_pattern {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* REUSABLE */
+
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 599px) {}
