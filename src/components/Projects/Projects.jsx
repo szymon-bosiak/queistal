@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './projects.css'
 import arrow from '../../assets/arrow.svg'
+import decor from '../../assets/decor.svg'
 import picture_1 from '../../assets/showcase/1.jpg'
 import picture_2 from '../../assets/showcase/2.jpg'
 import picture_3 from '../../assets/showcase/3.jpg'
@@ -27,90 +28,73 @@ const Projects = () => {
 
     const pictures = [
         {
-            id: 1,
             img: picture_1,
             alt: 'Drewniana elewacja budynku'
         },
         {
-            id: 2,
-            img: picture_2,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 3,
             img: picture_3,
-            alt: 'Drewniana elewacja budynku'
+            alt: 'Drewniana wiata parkowa'
         },
         {
-            id: 4,
-            img: picture_4,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 5,
             img: picture_5,
-            alt: 'Drewniana elewacja budynku'
+            alt: 'Przystanek edukacyjny'
         },
         {
-            id: 6,
-            img: picture_6,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 7,
             img: picture_7,
-            alt: 'Drewniana elewacja budynku'
+            alt: 'Budka przeznaczona do handlu'
         },
         {
-            id: 8,
-            img: picture_8,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 9,
-            img: picture_9,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 10,
-            img: picture_10,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 11,
-            img: picture_11,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 12,
-            img: picture_12,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 13,
             img: picture_13,
-            alt: 'Drewniana elewacja budynku'
+            alt: 'Gont'
         },
         {
-            id: 14,
-            img: picture_14,
-            alt: 'Drewniana elewacja budynku'
-        },
-        {
-            id: 15,
             img: picture_15,
-            alt: 'Drewniana elewacja budynku'
+            alt: 'Tężnia'
         },
         {
-            id: 16,
-            img: picture_16,
-            alt: 'Drewniana elewacja budynku'
+            img: picture_14,
+            alt: 'Altana użytkowa'
         },
         {
-            id: 17,
+            img: picture_8,
+            alt: 'Taras widokowy'
+        },
+        {
+            img: picture_9,
+            alt: 'Krzesła leżakowe'
+        },
+        {
+            img: picture_10,
+            alt: 'Altana przystanku edukacyjnego'
+        },
+        {
+            img: picture_11,
+            alt: 'Zadaszenie'
+        },
+        {
+            img: picture_12,
+            alt: 'Ławy z krzesłami'
+        },
+        {
+            img: picture_6,
+            alt: 'Miejsce spotkań'
+        },
+        {
             img: picture_17,
-            alt: 'Drewniana elewacja budynku'
-        }  
+            alt: 'Budka wolnostojąca'
+        },
+        {
+            img: picture_2,
+            alt: 'Atrakcja dla dzieci'
+        },
+        {
+            img: picture_16,
+            alt: 'Ławki z grawerunkiem'
+        },
+        {
+            img: picture_4,
+            alt: 'Schody'
+        }
     ]
 
     function prev() {
@@ -122,36 +106,47 @@ const Projects = () => {
     function next() {
         if (index < pictures.length - 2) {
             setIndex(index + 1)
-        } 
+        }
     }
 
-    
 
-  return (
-    <div className='projects_container'>
-        <div className='projects_container-flex'>
-            <h3>//PROJEKTY</h3>
+    return (
+        <div className='projects_container'>
+            <div className='projects_container-flex'>
+                <h3>//PROJEKTY</h3>
 
-            <div className='showcase'>
-
-                <div className='showcase_big'>
-                    <img className='showcase_big-img' src={pictures[index].img} alt="" />
-                    <p className='showcase_big-txt'>Drewniana elewacja budynku</p>
+                <div className='decors'>
+                    <img className='decor top-left' src={decor} />
+                    <img className='decor top-right' src={decor} />
                 </div>
 
-                <div className='showcase_nav'>
-                      <img className={`showcase_nav-left ${index === 0 ? ' disabled' : ''}`} onClick={prev} src={arrow} alt="previous picture" />
-                      <img className={`showcase_nav-right ${index === pictures.length - 2 ? ' disabled' : ''}`} onClick={next} src={arrow} alt="next picture" />
+                <div className='showcase-flex'>
+                    <div className='showcase'>
+
+                        <div className='showcase_big'>
+                            <img className='showcase_big-img' src={pictures[index].img} alt={pictures[index].alt} />
+                            <p className='showcase_big-txt'>{pictures[index].alt}</p>
+                        </div>
+
+                        <div className='showcase_nav'>
+                            <img className={`showcase_nav-left ${index === 0 ? ' disabled' : ''}`} onClick={prev} src={arrow} alt="previous picture" />
+                            <img className={`showcase_nav-right ${index === pictures.length - 2 ? ' disabled' : ''}`} onClick={next} src={arrow} alt="next picture" />
+                        </div>
+
+                        <div className='showcase_small'>
+                            <img className='showcase_small-img' src={pictures[index + 1].img} alt={pictures[index + 1].alt} />
+                        </div>
+                    </div>
                 </div>
 
-                  <div className='showcase_small'>
-                      <img className='showcase_small-img' src={pictures[index + 1].img} alt="" />
-                  </div>
-                
+                <div className='decors'>
+                    <img className='decor bottom-left' src={decor} />
+                    <img className='decor bottom-right' src={decor} />
+                </div>
+
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Projects
