@@ -52,6 +52,7 @@ const Hero = () => {
           <div className='nav-contact'>
             <div>
               <p className='nav-contact-txt' onClick={handleClick}>KONTAKT</p>
+              
               <div className={`nav-contact-bg ${isClicked ? 'clickedBg' : ''}`}>
                 <a className={`nav-contact-item ${isClicked ? 'clicked' : ''}`} href="tel:+48.782.243.640">
                   <img className='nav-contact-item-img' src={phone} alt="phone icon" />
@@ -65,9 +66,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-
-
       </div>
 
       <div id='hero' className='hero_container'>

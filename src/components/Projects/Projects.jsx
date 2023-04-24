@@ -116,22 +116,6 @@ const Projects = () => {
         }
     }
 
-    // Animations
-
-    const taskVariantsUncompleted = {
-        initial: {
-            X: 0
-        },
-        animate: {
-            x: 0,
-            transition: { duration: .5 }
-        },
-        hidden: {
-            X: -200,
-            transition: { duration: .5 }
-        }
-    }
-
     return (
         <div id='projects' className='projects_container'>
             <div className='projects_container-flex'>

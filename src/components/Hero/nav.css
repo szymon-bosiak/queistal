@@ -65,6 +65,7 @@
     border: 1.9px solid var(--txt);
     border-radius: 2rem;
     width: 6rem;
+    transform: translateY(-.2rem);
 }
 
 .nav-contact-item {
@@ -98,7 +99,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 2.55rem;
+    margin-top: 2.34rem;
     margin-right: 2rem;
 
     background: rgba(227, 235, 212, 0.45);

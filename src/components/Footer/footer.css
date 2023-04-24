@@ -76,6 +76,22 @@
 
 /* RESPONSIVENESS */
 
+@media only screen and (max-width: 1150px) {
+
+    .footer_content-phone,
+    .footer_content-mail,
+    .footer_content-legal {
+        padding: 1rem;
+    }
+
+    .footer_content-phone h4,
+    .footer_content-mail h4 {
+        white-space: nowrap;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
 @media only screen and (max-width: 900px) {
 
     .footer_content {
@@ -86,14 +102,27 @@
         border-top: 2px solid var(--txt);
     }
 
-        .footer_content-phone,
-        .footer_content-mail {
-            padding: 5%;
-        }
+    .footer_content-legal {
+        padding-left: 1.4rem;
+    }
+
+    .footer_content-phone,
+    .footer_content-mail {
+        border: none;
+        border-top: 2px solid var(--txt);
+    }
 
     .footer_content-phone h4,
     .footer_content-mail h4 {
         font-size: 28px;
         font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .footer_content-phone img,
+    .footer_content-mail img {
+        padding-right: .5rem;
     }
 }

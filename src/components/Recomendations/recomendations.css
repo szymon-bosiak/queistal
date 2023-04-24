@@ -87,12 +87,11 @@
 }
 
 .swiper-content-inner-desc {
+    display: flex;
     font-size: 21px;
     font-weight: 200;
     max-width: 34rem;
 }
-
-
 
 /* DECORATIONS */
 
@@ -116,4 +115,88 @@
     height: 0;
     border-top: 8rem solid var(--main-bg);
     border-right: 8rem solid transparent;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+
+    .swiper-content-inner img {
+        height: 8rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .swiper-content-inner-name h2 {
+        font-size: 40px;
+    }
+
+    .swiper-content-inner-name p {
+        font-size: 17px;
+    }
+
+    .swiper-content-inner-desc {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .swiper-triangle-upper {
+        border-bottom: 4rem solid var(--main-bg);
+        border-left: 4rem solid transparent;
+    }
+
+    .swiper-triangle-lower {
+        border-top: 4rem solid var(--main-bg);
+        border-right: 4rem solid transparent;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .swiper-content {
+        height: 33rem;
+    }
+
+    .swiper-content-inner {
+        margin-bottom: 2.5rem;
+    }
+
+    .swiper-content-inner img {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .swiper-content {
+        height: 36rem;
+    }
+
+    .swiper-content-inner {
+        margin-bottom: 2.5rem;
+    }
+
+    .swiper-content-inner-desc {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .swiper-content-inner-name h2 {
+        font-size: 33px;
+    }
+
+    .swiper-content-inner-desc {
+        font-size: 17px;
+        font-weight: 200;
+    }
+
+    .swiper-content-inner img {
+        height: 6rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
 }
