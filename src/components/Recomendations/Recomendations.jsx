@@ -57,7 +57,7 @@ const Recomendations = () => {
   ]
 
   return (
-    <div className='recomendations_container'>
+    <div id='recomendations' className='recomendations_container'>
       <div className='recomendations_container-flex'>
         <h3>//REKOMENDACJE</h3>
 

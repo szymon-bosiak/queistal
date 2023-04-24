@@ -1,14 +1,18 @@
 /* GENERAL */
 
-.hero_container {
-    z-index: 110;
+.overlap {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 50;
 }
 
 .container-flex {
@@ -16,34 +20,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* NAV */
-
-.nav {
-    padding: 2.5rem 2rem;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-contact {
-    font-size: 21px;
-    font-weight: 400;
-    padding: .2rem 1.1rem;
-    border: 1.9px solid var(--txt);
-    border-radius: 2rem;
-}
-
-.nav-main img {
-    width: 4rem;
-    transform: translateY(-1.1rem);
-}
-
-.nav-logo {
-    height: 3.2rem;
-    transform: translateY(-1.3rem);
-    margin-right: 1.3rem;
 }
 
 /* HEADING */
@@ -92,10 +68,10 @@
     right: 13%;
     background-color: rgba(0, 0, 0, 0);
     width: 0;
-	height: 0;
-	border-left: 6rem solid transparent;
-	border-right: 6rem solid transparent;
-	border-top: 3.8rem solid var(--main-bg);
+    height: 0;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-top: 3.8rem solid var(--main-bg);
 }
 
 .hero_container-triangle-lower {
@@ -129,4 +105,14 @@
 .hero_container-txt p {
     font-size: 27px;
     font-weight: 400;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 900px) {
+
+    .hero_container-img img {
+        right: 0;
+        object-position: 5% 95%;
+    }
 }

@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './projects.css'
+import { motion, AnimatePresence } from 'framer-motion'
 import arrow from '../../assets/arrow.svg'
 import decor from '../../assets/decor.svg'
+import blank from '../../assets/showcase/blank.png'
 import picture_1 from '../../assets/showcase/1.jpg'
 import picture_2 from '../../assets/showcase/2.jpg'
 import picture_3 from '../../assets/showcase/3.jpg'
@@ -94,7 +96,12 @@ const Projects = () => {
         {
             img: picture_4,
             alt: 'Schody'
+        },
+        {
+            img: blank,
+            alt: ''
         }
+
     ]
 
     function prev() {
@@ -109,9 +116,24 @@ const Projects = () => {
         }
     }
 
+    // Animations
+
+    const taskVariantsUncompleted = {
+        initial: {
+            X: 0
+        },
+        animate: {
+            x: 0,
+            transition: { duration: .5 }
+        },
+        hidden: {
+            X: -200,
+            transition: { duration: .5 }
+        }
+    }
 
     return (
-        <div className='projects_container'>
+        <div id='projects' className='projects_container'>
             <div className='projects_container-flex'>
                 <h3>//PROJEKTY</h3>
 
@@ -124,8 +146,33 @@ const Projects = () => {
                     <div className='showcase'>
 
                         <div className='showcase_big'>
-                            <img className='showcase_big-img' src={pictures[index].img} alt={pictures[index].alt} />
-                            <p className='showcase_big-txt'>{pictures[index].alt}</p>
+                            <AnimatePresence>
+                                <motion.img
+                                    initial={{ opacity: .75, rotate: 1 }}
+                                    animate={{ opacity: 1, rotate: 0 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: .5 }}
+                                    className='showcase_big-img'
+                                    src={pictures[index].img}
+                                    alt={pictures[index].alt}
+                                    key={pictures[index].img}
+                                />
+                                <div
+                                    className='showcase_big-txt-triangle'
+                                    key={index + 100}
+                                >
+                                    <motion.p 
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: .5 }}
+                                        className='showcase_big-txt' 
+                                        key={pictures[index].alt}
+                                    >
+                                        {pictures[index].alt}
+                                    </motion.p>
+                                </div>
+                            </AnimatePresence>
                         </div>
 
                         <div className='showcase_nav'>
@@ -133,9 +180,6 @@ const Projects = () => {
                             <img className={`showcase_nav-right ${index === pictures.length - 2 ? ' disabled' : ''}`} onClick={next} src={arrow} alt="next picture" />
                         </div>
 
-                        <div className='showcase_small'>
-                            <img className='showcase_small-img' src={pictures[index + 1].img} alt={pictures[index + 1].alt} />
-                        </div>
                     </div>
                 </div>
 

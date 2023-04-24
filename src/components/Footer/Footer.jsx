@@ -19,14 +19,18 @@ const Footer = () => {
           <p>67-320 Małomice, ul. Kościuszki 19c</p>
         </div>
 
-        <div className='footer_content-phone'>
-          <img src={phone} alt="phone icon" />
-          <h4>782 243 640</h4>
+        <div className='footer_content-phone contact'>
+          <a href="tel:+48.782.243.640">
+            <img src={phone} alt="phone icon" />
+            <h4>782 243 640</h4>
+          </a>
         </div>
 
-        <div className='footer_content-mail'>
-          <img src={mail} alt="e-mail icon" />
-          <h4>queistal@gmail.com</h4>
+        <div className='footer_content-mail contact'>
+          <a href="mailto:queistal@gmail.com">
+            <img src={mail} alt="e-mail icon" />
+            <h4>queistal@gmail.com</h4>
+          </a>
         </div>
 
       </div>
