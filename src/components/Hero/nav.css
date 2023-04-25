@@ -15,7 +15,6 @@
 .nav-logo {
     height: 3.2rem;
     transform: translateY(-1.3rem);
-    margin-right: 1.3rem;
 }
 
 .nav-main img {
@@ -59,13 +58,21 @@
     z-index: 300;
     right: 2rem;
     cursor: pointer;
-    font-size: 21px;
-    font-weight: 400;
+
     padding: .2rem 1.1rem;
     border: 1.9px solid var(--txt);
     border-radius: 2rem;
     width: 6rem;
     transform: translateY(-.2rem);
+}
+
+.nav-contact-txt-wide {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.nav-contact-txt-narrow {
+    display: none;
 }
 
 .nav-contact-item {
@@ -99,7 +106,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 2.34rem;
+    margin-top: 2.3rem;
     margin-right: 2rem;
 
     background: rgba(227, 235, 212, 0.45);
@@ -124,4 +131,72 @@
 .clicked {
     opacity: 0;
     pointer-events: none;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+
+    .nav_pop-inner a {
+        font-size: 4vw;
+    }
+
+    .nav_static {
+        padding: 2.5rem .75rem;
+    }
+
+    .nav-contact-txt {
+        right: 1rem;
+    }
+
+    .nav-contact-txt {
+        padding: 0;
+        border-radius: 100%;
+        border: 1px solid var(--txt);;
+        width: 3.1rem;
+        height: 3.1rem;
+        transform: translateY(-1.2rem);
+    }
+
+    .nav-contact-bg {
+        padding-left: 1.2rem;
+        margin-right: 1rem;
+        margin-top: 1.3rem;
+        border-radius: 30px;
+    }
+
+    .clickedBg {
+        right: -10rem;
+    }
+
+    .nav-contact-txt-wide {
+        display: none;
+    } 
+
+    .nav-contact-txt-narrow  {
+        transform: translate(.15rem, .05rem);
+        color: var(--txt);
+        height: 4rem;
+        display: block;
+    } 
+
+    .phone {
+        height: 3rem;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nav-contact-bg {
+        padding-left: 2vw;
+        width: 80vw;
+        height: 14.5rem;
+    }
+
+    .nav-contact-bg h4 {
+        font-size: 5.5vw;
+    }
+
 }

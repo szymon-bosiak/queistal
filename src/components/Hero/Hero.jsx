@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './hero.css'
 import './nav.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { BiPhoneCall } from 'react-icons/bi'
 import hero from '../../assets/hero.jpg'
 import logo from '../../assets/queistal_logo_dark.svg'
 import lines from '../../assets/lines_grip.svg'
@@ -51,7 +52,10 @@ const Hero = () => {
 
           <div className='nav-contact'>
             <div>
-              <p className='nav-contact-txt' onClick={handleClick}>KONTAKT</p>
+              <div className='nav-contact-txt' onClick={handleClick}>
+                <p className='nav-contact-txt-wide'>KONTAKT</p>  
+                <p className='nav-contact-txt-narrow'><BiPhoneCall className='phone' /></p>  
+              </div>
               
               <div className={`nav-contact-bg ${isClicked ? 'clickedBg' : ''}`}>
                 <a className={`nav-contact-item ${isClicked ? 'clicked' : ''}`} href="tel:+48.782.243.640">

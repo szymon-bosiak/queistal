@@ -121,3 +121,33 @@
     }
 
 }
+
+@media only screen and (max-width: 530px) {
+
+    .about_container-squares {
+        gap: 2vw 2vw;
+        grid-template-columns: repeat(2, 40vw);
+    }
+
+    .about_container-square {
+        width: 40vw;
+        height: 40vw;
+        padding: .5rem;
+    }
+
+    .about_container-txt p {
+        width: 7rem;
+        font-size: 16px;
+    }
+
+    .about_container-square img {
+        width: 9.5vh;
+        height: 9.5vh;
+    }
+
+    .about_container-square p {
+        font-size: 3.3vw;
+        margin-bottom: .4rem;
+    }
+
+}
