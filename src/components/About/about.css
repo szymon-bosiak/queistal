@@ -1,14 +1,15 @@
 .about_container {
-    transform: translateY(-5rem);
-    margin: 0 2rem;
+    margin-top: 4rem;
+    padding: 0 2rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    
 }
 
 .about_container-flex {
-    max-width: 75rem;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -38,6 +39,8 @@
 .about_container-squares {
     display: flex;
     flex-direction: row;
+    margin-top: .6rem;
+    padding-bottom: 1rem;
 }
 
 .about_container-square {

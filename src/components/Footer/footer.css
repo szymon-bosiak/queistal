@@ -33,6 +33,7 @@
     justify-content: center;
     padding-left: 1.5rem;
     border-right: 2px solid var(--txt);
+    border-bottom: 1px solid var(--txt);
     background-color: var(--txt);
     color: var(--white);
 }
@@ -92,12 +93,12 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 830px) {
 
     .footer_content {
         display: flex;
         flex-direction: column;
-        height: 3rem;
+        height: 1rem;
         width: 100%;
         border-top: 2px solid var(--txt);
     }

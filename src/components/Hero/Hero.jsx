@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='nav_static' data-aos="fade-down">
+        <div className='nav_static'>
           <img className='nav-logo' src={logo} alt='logo' />
 
           <div className='nav-main'>
@@ -77,14 +77,14 @@ const Hero = () => {
           <div className='container-flex'>
 
             <div className='hero_container-heading'>
-              <div className='hero_container-heading-mid' data-aos="fade-right">
+              <div className='hero_container-heading-mid'>
                 <h3>NASZĄ PASJĄ JEST</h3>
               </div>
               <div className='hero_container-heading-grid-lower'>
                 <div className='hero_container-heading-small'>
                   <p>Projektujemy i tworzymy zabudowę drewnianą skrojoną na twoje potrzeby</p>
                 </div>
-                <div className='hero_container-heading-big' data-aos="fade-left">
+                <div className='hero_container-heading-big'>
                   <h1>ARCHITEKTURA DREWNIANA</h1>
                 </div>
               </div>

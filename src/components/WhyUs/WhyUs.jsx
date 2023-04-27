@@ -17,7 +17,7 @@ const WhyUs = () => {
     return (
         <div id='whyus' className='whyus_container'>
             <div className='whyus_container-flex'>
-                <h3>//DLACZEGO MY</h3>
+                <h3 className='advantages-title id_hook'>//DLACZEGO MY</h3>
 
                 <div className='advantages-flex'>
                     <div className='advantages'>

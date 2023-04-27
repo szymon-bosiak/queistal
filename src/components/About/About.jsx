@@ -19,7 +19,7 @@ const About = () => {
 
     return (
         <div id='about' className='about_container'>
-            <div className='about_container-flex'>
+            <div className='about_container-flex id_hook'>
 
                 <div className='about_container-txt'>
                     <h3>//O NAS</h3>

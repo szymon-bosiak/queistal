@@ -119,7 +119,7 @@ const Projects = () => {
     return (
         <div id='projects' className='projects_container'>
             <div className='projects_container-flex'>
-                <h3>//PROJEKTY</h3>
+                <h3 className='id_hook'>//PROJEKTY</h3>
 
                 <div className='decors'>
                     <img className='decor top-left' src={decor} />

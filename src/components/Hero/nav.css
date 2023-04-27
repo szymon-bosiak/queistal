@@ -5,7 +5,6 @@
 }
 
 .nav_static {
-    transform: translateX(.78rem);
     padding: 2.5rem 2rem;
     height: 7rem;
     display: flex;
@@ -43,7 +42,7 @@
 }
 
 .hidden {
-    transform: translateY(-4.5rem);
+    transform: translateY(-3.5rem);
     height: 0;
 }
 
@@ -81,6 +80,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--txt);
+    overflow: hidden;
 }
 
 .nav-contact-item h4 {
