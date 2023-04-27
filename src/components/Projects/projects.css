@@ -284,12 +284,12 @@
 @media only screen and (max-width: 550px) {
 
     .showcase {
-        height: 33rem;
+        height: 36rem;
     }
 
     .showcase_big-img {
-        top: 17.5rem;
-        height: 25rem;
+        top: 15rem;
+        height: 28rem;
         object-position: 52% 50%;
     }
 
@@ -299,7 +299,7 @@
 
     .showcase_big-txt  {
         transform: none;
-        top: -27.5rem;
+        top: -30rem;
         width: 11rem;
         left: -21vw;
     }
@@ -309,7 +309,11 @@
     }
 
     .showcase_nav {
-        bottom: 4rem;
+        bottom: 3rem;
+    }
+
+    .decor {
+        width: 4rem;
     }
 
 }

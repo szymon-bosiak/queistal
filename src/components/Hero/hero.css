@@ -76,8 +76,10 @@
 }
 
 .hero_container-triangle-lower {
-    transform: translateY(-14.5rem);
-    left: 2rem;
+    position: relative;
+    bottom: 14.3rem;
+    z-index: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0);
     width: 0;
     height: 0;
@@ -85,14 +87,18 @@
     border-right: 18rem solid transparent;
 }
 
-
+.hero_container-img {
+    height: 28rem;
+    max-height: 32rem;
+}
 
 .hero_container-img img {
+    height: 100%;
     width: 95vw;
     max-width: 90rem;
     max-height: 32rem;
     object-fit: cover;
-    object-position: 5% 95%;
+    object-position: 5% 85%;
 }
 
 .hero_container-txt {
@@ -114,15 +120,12 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .hero_container-img img {
-        height: 100%;
-    }
 }
 
 @media only screen and (max-width: 900px) {
 
     .hero_container-triangle-lower {
-        transform: translateY(-10rem);
+        bottom: 10rem;
         border-bottom: 10.3rem solid var(--main-bg);
     }
 
@@ -170,7 +173,7 @@
     }
 
     .hero_container-triangle-lower {
-        transform: translateY(-7rem);
+        bottom: 7rem;
         border-bottom: 7.3rem solid var(--main-bg);
     }
 }
@@ -212,5 +215,13 @@
     .hero_container-img img {
         height: 55vh;
         object-position: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .hero_container-triangle-lower {
+        bottom: 3rem;
+        position: absolute;
     }
 }
