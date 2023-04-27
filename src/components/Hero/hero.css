@@ -103,7 +103,7 @@
 
 .hero_container-txt {
     position: absolute;
-    transform: translateY(-4.1rem);
+    bottom: 0;
 }
 
 .hero_container-txt h3 {
@@ -129,17 +129,19 @@
         border-bottom: 10.3rem solid var(--main-bg);
     }
 
-     .hero_container-img img {
+    .hero_container-img img {
         object-position: 70%;
     }
+
 }
 
 @media only screen and (max-width: 750px) {
 
     .hero_container-img img {
-        height: 50vh;
         object-position: 80%;
     }
+
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -209,19 +211,12 @@
     .hero_container-heading-small p {
         max-width: none;
     }
-
-    /* IMG */
-
-    .hero_container-img img {
-        height: 55vh;
-        object-position: 80%;
-    }
 }
 
 @media only screen and (max-width: 400px) {
 
     .hero_container-triangle-lower {
-        bottom: 3rem;
+        bottom: 0;
         position: absolute;
     }
 }
