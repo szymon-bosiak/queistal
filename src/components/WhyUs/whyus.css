@@ -10,6 +10,7 @@
 }
 
 .whyus_container-flex {
+    padding-right: 2rem;
     max-width: 90rem;
     width: 100%;
     display: flex;
@@ -56,29 +57,28 @@
 /* BOXES */
 
 .boxes {
-    width: 25vw;
+    width: 30rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .box {
-    width: 25vw;
     position: relative;
-    top: 2rem;
+    top: 0;
 }
 
 .box-left {
-    left: 12.5vw;
+    left: 15rem;
 }
 
 .box-right {
-    left: -12.5vw;
+    left: -15rem;
 }
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1450px) {
 
     .advantages-flex {
         display: flex;
@@ -173,7 +173,7 @@
         position: absolute;
         opacity: .15;
         height: 80vh;
-        top: 27vh;
+        top: 23vh;
         left: 2rem;
         right: 0;
         margin: 0 auto;
