@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { MdOutlineZoomInMap, MdOutlineZoomOutMap } from 'react-icons/md'
 import arrow from '../../assets/arrow.svg'
 import decor from '../../assets/decor.svg'
-import blank from '../../assets/showcase/blank.png'
 import picture_1 from '../../assets/showcase/1.jpg'
 import picture_2 from '../../assets/showcase/2.jpg'
 import picture_3 from '../../assets/showcase/3.jpg'
@@ -98,12 +97,7 @@ const Projects = () => {
         {
             img: picture_4,
             alt: 'Schody'
-        },
-        {
-            img: blank,
-            alt: ''
         }
-
     ]
 
     function prev() {
@@ -181,7 +175,7 @@ const Projects = () => {
 
                         <div className='showcase_nav'>
                             <img className={`showcase_nav-left ${index === 0 ? ' disabled' : ''}`} onClick={prev} src={arrow} alt="previous picture" />
-                            <img className={`showcase_nav-right ${index === pictures.length - 2 ? ' disabled' : ''}`} onClick={next} src={arrow} alt="next picture" />
+                            <img className={`showcase_nav-right ${index === pictures.length - 1 ? ' disabled' : ''}`} onClick={next} src={arrow} alt="next picture" />
                         </div>
 
                     </div>
