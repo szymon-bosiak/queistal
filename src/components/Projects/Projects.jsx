@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './projects.css'
 import { motion, AnimatePresence } from 'framer-motion'
+import { MdOutlineZoomInMap, MdOutlineZoomOutMap } from 'react-icons/md'
 import arrow from '../../assets/arrow.svg'
 import decor from '../../assets/decor.svg'
 import blank from '../../assets/showcase/blank.png'
@@ -27,6 +28,7 @@ import picture_17 from '../../assets/showcase/17.jpg'
 const Projects = () => {
 
     const [index, setIndex] = useState(0);
+    const [isZoom, setZoom] = useState(false)
 
     const pictures = [
         {
@@ -116,6 +118,16 @@ const Projects = () => {
         }
     }
 
+    function ToggleSize() {
+        setZoom(!isZoom)
+
+        if (isZoom === true) {
+            document.documentElement.style.overflowY = "auto"
+        } else {
+            document.documentElement.style.overflowY = "hidden"
+        }
+    }
+
     return (
         <div id='projects' className='projects_container'>
             <div className='projects_container-flex'>
@@ -140,24 +152,32 @@ const Projects = () => {
                                     src={pictures[index].img}
                                     alt={pictures[index].alt}
                                     key={pictures[index].img}
+                                    onClick={ToggleSize}
                                 />
                                 <div
                                     className='showcase_big-txt-triangle'
                                     key={index + 100}
                                 >
-                                    <motion.p 
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: .5 }}
-                                        className='showcase_big-txt' 
-                                        key={pictures[index].alt}
-                                    >
-                                        {pictures[index].alt}
-                                    </motion.p>
+                                    <div className='showcase_big-txt'>
+                                        <MdOutlineZoomOutMap className='open' onClick={ToggleSize} />
+
+
+                                        <motion.p 
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{ duration: .5 }}
+                                            
+                                            key={pictures[index].alt}
+                                        >
+                                            {pictures[index].alt}
+                                        </motion.p>
+                                    </div>
                                 </div>
                             </AnimatePresence>
                         </div>
+
+                        
 
                         <div className='showcase_nav'>
                             <img className={`showcase_nav-left ${index === 0 ? ' disabled' : ''}`} onClick={prev} src={arrow} alt="previous picture" />
@@ -170,6 +190,18 @@ const Projects = () => {
                 <div className='decors'>
                     <img className='decor bottom-left' src={decor} />
                     <img className='decor bottom-right' src={decor} />
+                </div>
+
+                <div className={`absolute_showcase_big ${isZoom ? '' : 'absolute_hiden'}`} onClick={ToggleSize}>
+                    <div className='absolute_showcase_big-container'>
+                        <MdOutlineZoomInMap className='exit' onClick={ToggleSize} />
+                        <img
+                            className='absolute_showcase_big-img'
+                            src={pictures[index].img}
+                            alt={pictures[index].alt}
+                            key={pictures[index].img}
+                        />
+                    </div>
                 </div>
 
             </div>

@@ -9,14 +9,14 @@ import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
-    <div className='wraper'>
+    <>
       <Hero />
       <About />
       <Projects />
       <WhyUs />
       <Recomendations />
       <Footer />
-    </div>
+    </>
   )
 }
 

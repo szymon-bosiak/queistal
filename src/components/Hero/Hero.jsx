@@ -20,7 +20,6 @@ const Hero = () => {
   }
 
   const handleClick = () => {
-    console.log('click')
     setClicked(!isClicked)
   }
 

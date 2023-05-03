@@ -15,7 +15,7 @@ const Recomendations = () => {
     {
       img: man_suit,
       name: 'Robert Woźniak',
-      position: 'Minister',
+      position: '',
       txt: 'Jestem zachwycony z wykonanej przez firmę budowlaną drewnianej altany w moim ogrodzie. Cały projekt był zrealizowany bardzo profesjonalnie. Altana doskonale wpasowała się w styl mojego ogrodu. Jestem bardzo zadowolony z efektu końcowego i polecam tę firmę każdemu, kto szuka solidnego wykonawcy.'
     },
     {
