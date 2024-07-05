@@ -53,9 +53,9 @@
 }
 
 .nav-contact-txt {
-    position: absolute;
+    position: relative;
     z-index: 300;
-    right: 2rem;
+    right: 4rem;
     cursor: pointer;
 
     padding: .2rem 1.1rem;
@@ -63,6 +63,9 @@
     border-radius: 2rem;
     width: 6rem;
     transform: translateY(-.2rem);
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .nav-contact-txt-wide {
@@ -103,9 +106,9 @@
     justify-content: center;
     padding-left: 2rem;
 
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
+    top: -4.6rem;
+    right: 20rem;
     margin-top: 2.3rem;
     margin-right: 2rem;
 
@@ -123,6 +126,9 @@
 }
 
 .clickedBg {
+    position: relative;
+    top: -4.6rem;
+    right: 10rem;
     width: 12rem;
     height: 7rem;
     opacity: 0;
@@ -163,10 +169,12 @@
         margin-right: 1rem;
         margin-top: 1.3rem;
         border-radius: 30px;
+        top: -5.6rem;
+        right: 19.9rem;
     }
 
     .clickedBg {
-        right: -10rem;
+        right: 9.9rem;
     }
 
     .nav-contact-txt-wide {
@@ -190,13 +198,19 @@
 @media only screen and (max-width: 500px) {
 
     .nav-contact-bg {
-        padding-left: 2vw;
-        width: 80vw;
-        height: 14.5rem;
+        width: 17.5rem;
+        height: 10.5rem;
+        top: -5.6rem;
+        right: 15.4rem;
     }
 
     .nav-contact-bg h4 {
-        font-size: 5.5vw;
+        font-size: 1.25rem;
     }
 
+    .clickedBg {
+        width: 6rem;
+        height: 4rem;
+        right: 3.9rem;
+    }
 }

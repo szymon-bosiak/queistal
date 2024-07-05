@@ -69,11 +69,11 @@
 }
 
 .box-left {
-    left: 15rem;
+    left: 0rem;
 }
 
 .box-right {
-    left: -15rem;
+    left: -30rem;
 }
 
 /* RESPONSIVENESS */
@@ -114,11 +114,11 @@
     }
 
     .box-left {
-        left: 10rem;
+        left: 1rem;
     }
 
     .box-right {
-        left: -10rem;
+        left: -19rem;
     }
 }
 
@@ -142,12 +142,12 @@
 
     .box-left {
         width: 21rem;
-        left: 10.5rem;
+        left: 4.5rem;
     }
 
     .box-right {
         min-width: 21rem;
-        left: -10rem;
+        left: -16rem;
     }
 }
 
@@ -182,11 +182,11 @@
 
     .box-left {
         min-width: 40rem;
-        left: 20rem;
+        left: -8rem;
     }
 
     .box-right {
         min-width: 40rem;
-        left: -20rem;
+        left: -48rem;
     }
 }

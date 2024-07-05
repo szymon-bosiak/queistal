@@ -117,7 +117,7 @@
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .swiper-content-inner img {
         height: 8rem;
@@ -150,19 +150,23 @@
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
 
     .swiper-content-inner {
-        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .swiper-content-inner img {
-        margin-right: 1rem;
+        align-items: center;
+        margin: 0;
     }
-    
-}
 
-@media only screen and (max-width: 500px) {
+    .swiper-content-inner-name h2 {
+        width: max-content;
+        margin: 0;
+    }
 
     .swiper-content-inner-desc {
         font-size: 19px;
@@ -172,6 +176,10 @@
 
 @media only screen and (max-width: 450px) {
 
+    .swiper-content-inner {
+        margin-bottom: 2.5rem;
+    }
+
     .swiper-content-inner-name h2 {
         font-size: 23px;
     }
@@ -179,12 +187,6 @@
     .swiper-content-inner-desc {
         font-size: 17px;
         font-weight: 200;
-    }
-
-    .swiper-content-inner img {
-        height: 6rem;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
     }
 
 }

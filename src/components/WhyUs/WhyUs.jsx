@@ -23,7 +23,7 @@ const WhyUs = () => {
                     <div className='advantages'>
 
                         <div className='advantage'>
-                            <h3>WYSOKA JAKOŚĆ USŁUG</h3>
+                            <h3>WYSOKA JAKOŚĆ</h3>
                             <p>Jesteśmy zespołem specjalistów, którzy nieustannie podnoszą swoje kwalifikacje i posiadają 
                                 bogate doświadczenie w branży budowlanej. Wszystkie nasze prace wykonywane są z dbałością 
                                 o najmniejsze szczegóły, aby zapewnić Ci kompleksową i wysoką jakość usług. Zaufaj nam, a 
