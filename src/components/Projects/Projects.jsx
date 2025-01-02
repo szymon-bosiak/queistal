@@ -12,10 +12,7 @@ import picture_5 from "../../assets/showcase/5.jpg"
 import picture_6 from "../../assets/showcase/6.jpg"
 import picture_7 from "../../assets/showcase/7.jpg"
 import picture_8 from "../../assets/showcase/8.jpg"
-import picture_9 from "../../assets/showcase/9.jpg"
 import picture_10 from "../../assets/showcase/10.jpg"
-import picture_11 from "../../assets/showcase/11.jpg"
-import picture_12 from "../../assets/showcase/12.jpg"
 import picture_13 from "../../assets/showcase/13.jpg"
 import picture_14 from "../../assets/showcase/14.jpg"
 import picture_15 from "../../assets/showcase/15.jpg"
@@ -60,20 +57,8 @@ const Projects = () => {
       alt: "Taras widokowy",
     },
     {
-      img: picture_9,
-      alt: "Krzesła leżakowe",
-    },
-    {
       img: picture_10,
       alt: "Altana przystanku edukacyjnego",
-    },
-    {
-      img: picture_11,
-      alt: "Zadaszenie",
-    },
-    {
-      img: picture_12,
-      alt: "Ławy z krzesłami",
     },
     {
       img: picture_6,
@@ -120,7 +105,7 @@ const Projects = () => {
   }
 
   return (
-    <div id="projects" className="projects_container">
+    <div id="realizacje" className="projects_container">
       <div className="projects_container-flex">
         <h3 className="id_hook">//PROJEKTY</h3>
 

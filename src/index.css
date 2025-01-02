@@ -29,16 +29,3 @@ body {
   background-color: var(--main-bg);
 }
 
-/* REUSABLE */
-
-.id_hook {
-  padding-top: 6rem;
-}
-
-@media screen and (max-width: 1100px) {
-
-  .id_hook {
-    padding-top: 4rem;
-  }
-  
-}
