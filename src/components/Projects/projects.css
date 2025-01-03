@@ -202,6 +202,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.747);
   color: var(--white);
+  z-index: 100;
 }
 
 .exit {
