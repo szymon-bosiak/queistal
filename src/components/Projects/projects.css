@@ -205,12 +205,12 @@
 }
 
 .exit {
+  margin: 1rem;
   cursor: pointer;
   font-size: 35px;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1rem;
 }
 
 .absolute_showcase_big-img {
