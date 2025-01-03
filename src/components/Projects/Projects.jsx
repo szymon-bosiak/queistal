@@ -148,23 +148,25 @@ const Projects = () => {
                   </div>
                 </div>
               </AnimatePresence>
-            </div>
 
-            <div className="showcase_nav">
-              <img
-                className={`showcase_nav-left ${index === 0 ? "disabled" : ""}`}
-                onClick={prev}
-                src={arrow}
-                alt="previous picture"
-              />
-              <img
-                className={`showcase_nav-right ${
-                  index === pictures.length - 2 ? "disabled" : ""
-                }`}
-                onClick={next}
-                src={arrow}
-                alt="next picture"
-              />
+              <div className="showcase_nav">
+                <img
+                  className={`showcase_nav-left ${
+                    index === 0 ? "disabled" : ""
+                  }`}
+                  onClick={prev}
+                  src={arrow}
+                  alt="previous picture"
+                />
+                <img
+                  className={`showcase_nav-right ${
+                    index === pictures.length - 2 ? "disabled" : ""
+                  }`}
+                  onClick={next}
+                  src={arrow}
+                  alt="next picture"
+                />
+              </div>
             </div>
 
             <div className="decors">
