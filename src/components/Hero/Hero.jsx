@@ -5,6 +5,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { BiPhoneCall } from "react-icons/bi"
 import hero from "../../assets/hero.jpg"
+import heroMobile from "../../assets/hero-mobile.jpg"
 import logo from "../../assets/queistal_logo_dark.svg"
 import lines from "../../assets/lines_grip.svg"
 import phone from "../../assets/phone.svg"
@@ -114,7 +115,16 @@ const Hero = () => {
 
             <div className="hero_container-img">
               <div className="hero_container-triangle-upper"></div>
-              <img src={hero} alt="Picture of gazo." />
+              <picture>
+                <source
+                  srcSet={heroMobile}
+                  media="(max-width: 750px)"
+                />
+                <img
+                  src={hero}
+                  alt="Description of the image"
+                />
+              </picture>
               <div className="hero_container-txt">
                 <h3>Projekt</h3>
                 <p>przystanku dla pieszych</p>

@@ -148,7 +148,7 @@
 
 @media only screen and (max-width: 750px) {
   .hero_container-img img {
-    object-position: 80%;
+    object-position: 100% 35%;
   }
 }
 
@@ -183,22 +183,22 @@
   }
 
   .container-flex {
-    padding: 0 1rem 0.1rem 1rem;
+    padding: 0 0.5rem 0.1rem 0.5rem;
   }
 
   .hero_container-triangle-upper {
-    right: -5rem;
+    right: 2rem;
   }
 
   /* HEADING */
 
   .hero_container-heading-mid h3 {
-    font-size: 11.2vw;
+    font-size: 11.7vw;
   }
 
   .hero_container-heading-big h1 {
     line-height: 100%;
-    font-size: 13vw;
+    font-size: 16vw;
   }
 
   .hero_container-heading {
