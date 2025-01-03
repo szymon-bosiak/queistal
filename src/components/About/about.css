@@ -130,7 +130,6 @@
   
   .about_container-squares {
     gap: 2vw 2vw;
-    grid-template-columns: repeat(2, 40vw);
   }
 
   .about_container-square {

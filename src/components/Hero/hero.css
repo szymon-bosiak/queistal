@@ -19,7 +19,7 @@
 .container-flex {
   width: 100%;
   max-width: 1800px;
-  padding: 0 2rem;
+  padding: 0 2rem 0.1rem 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -71,29 +71,32 @@
 .hero_container-triangle-upper {
   position: absolute;
   right: 16%;
+  top: -0.1rem;
   background-color: rgba(0, 0, 0, 0);
   width: 0;
   height: 0;
   border-left: 6rem solid transparent;
   border-right: 6rem solid transparent;
   border-top: 3.8rem solid var(--main-bg);
+  transform: scale(1.02);
 }
 
 .hero_container-triangle-lower {
-  position: relative;
-  bottom: 14.3rem;
+  position: absolute;
+  bottom: 0;
   z-index: 0;
   left: 0;
   width: 0;
   height: 0;
   border-bottom: 14.3rem solid var(--main-bg);
   border-right: 18rem solid transparent;
+  transform: scale(1.01);
 }
 
 .hero_container-img {
   height: 28rem;
   width: 100%;
-  flex-shrink: 0;
+  position: relative;
 }
 
 .hero_container-img img {
@@ -128,18 +131,17 @@
 
 @media only screen and (max-width: 900px) {
   .hero_container-triangle-upper {
-    position: absolute;
-    right: -4rem;
-    background-color: rgba(0, 0, 0, 0);
     width: 0;
     height: 0;
-    border-left: 6rem solid transparent;
-    border-right: 6rem solid transparent;
-    border-top: 3.8rem solid var(--main-bg);
+    position: absolute;
+    right: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+    border-top: 2.4rem solid var(--main-bg);
   }
 
   .hero_container-triangle-lower {
-    bottom: 10rem;
     border-bottom: 10.3rem solid var(--main-bg);
   }
 }
@@ -177,12 +179,11 @@
   }
 
   .hero_container-triangle-lower {
-    bottom: 7rem;
     border-bottom: 7.3rem solid var(--main-bg);
   }
 
   .container-flex {
-    padding: 0 1rem;
+    padding: 0 1rem 0.1rem 1rem;
   }
 
   .hero_container-triangle-upper {
@@ -223,12 +224,5 @@
   .hero_container-img img {
     object-fit: cover;
     object-position: 70% 15%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .hero_container-triangle-lower {
-    bottom: 0;
-    position: absolute;
   }
 }

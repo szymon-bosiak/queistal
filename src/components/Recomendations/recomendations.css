@@ -102,6 +102,7 @@
   height: 0;
   border-bottom: 8rem solid var(--main-bg);
   border-left: 8rem solid transparent;
+  transform: scale(1.02);
 }
 
 .swiper-triangle-lower {
@@ -113,6 +114,7 @@
   height: 0;
   border-top: 8rem solid var(--main-bg);
   border-right: 8rem solid transparent;
+  transform: scale(1.02);
 }
 
 /* RESPONSIVENESS */

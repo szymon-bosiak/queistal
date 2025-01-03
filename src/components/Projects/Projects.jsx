@@ -107,15 +107,15 @@ const Projects = () => {
   return (
     <div id="realizacje" className="projects_container">
       <div className="projects_container-flex">
-        <h3 className="id_hook">//PROJEKTY</h3>
-
-        <div className="decors">
-          <img className="decor top-left" src={decor} />
-          <img className="decor top-right" src={decor} />
-        </div>
+        <h3 className="id_hook">//REALIZACJE</h3>
 
         <div className="showcase-flex">
           <div className="showcase">
+            <div className="decors">
+              <img className="decor top-left" src={decor} />
+              <img className="decor top-right" src={decor} />
+            </div>
+
             <div className="showcase_big">
               <AnimatePresence>
                 <motion.img
@@ -166,12 +166,12 @@ const Projects = () => {
                 alt="next picture"
               />
             </div>
-          </div>
-        </div>
 
-        <div className="decors">
-          <img className="decor bottom-left" src={decor} />
-          <img className="decor bottom-right" src={decor} />
+            <div className="decors">
+              <img className="decor bottom-left" src={decor} />
+              <img className="decor bottom-right" src={decor} />
+            </div>
+          </div>
         </div>
 
         <div
