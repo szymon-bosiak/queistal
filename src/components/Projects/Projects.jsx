@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./projects.css"
 import { motion, AnimatePresence } from "framer-motion"
 import { MdOutlineZoomInMap, MdOutlineZoomOutMap } from "react-icons/md"
@@ -82,6 +82,16 @@ const Projects = () => {
     },
   ]
 
+  // Preload galery images
+  useEffect(() => {
+    const preloadNextImage = () => {
+      const nextIndex = index + 1 < pictures.length ? index + 1 : 0;
+      const img = new Image();
+      img.src = pictures[nextIndex].img;
+    };
+    preloadNextImage();
+  }, [index, pictures]);
+
   function prev() {
     if (index > 0) {
       setIndex(index - 1)
@@ -89,7 +99,7 @@ const Projects = () => {
   }
 
   function next() {
-    if (index < pictures.length - 2) {
+    if (index < pictures.length - 1) {
       setIndex(index + 1)
     }
   }
@@ -129,7 +139,7 @@ const Projects = () => {
                   key={pictures[index].img}
                   onClick={ToggleSize}
                 />
-                <div className="showcase_big-txt-triangle" key={index + 100}>
+                <div className="showcase_big-txt-triangle" key={index}>
                   <div className="showcase_big-txt">
                     <MdOutlineZoomOutMap
                       className="open"
@@ -160,7 +170,7 @@ const Projects = () => {
                 />
                 <img
                   className={`showcase_nav-right ${
-                    index === pictures.length - 2 ? "disabled" : ""
+                    index === pictures.length - 1 ? "disabled" : ""
                   }`}
                   onClick={next}
                   src={arrow}
@@ -187,6 +197,7 @@ const Projects = () => {
               src={pictures[index].img}
               alt={pictures[index].alt}
               key={pictures[index].img}
+              loading="lazy"
             />
           </div>
         </div>

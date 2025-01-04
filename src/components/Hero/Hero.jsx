@@ -48,45 +48,49 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="nav_static">
-          <img className="nav-logo" src={logo} alt="logo" />
+        <div className="nav_static-wrapper">
+          <div className="nav_static">
+            <img className="nav-logo" src={logo} alt="logo" />
 
-          <div className="nav-main">
-            <img src={lines} onClick={handleToggle} alt="Open menu" />
-          </div>
+            <div className="nav-main">
+              <img src={lines} onClick={handleToggle} alt="Open menu" />
+            </div>
 
-          <div className="nav-contact">
-            <div>
-              <div className="nav-contact-txt" onClick={handleClick}>
-                <p className="nav-contact-txt-wide">KONTAKT</p>
-                <p className="nav-contact-txt-narrow">
-                  <BiPhoneCall className="phone" />
-                </p>
-              </div>
+            <div className="nav-contact">
+              <div>
+                <div className="nav-contact-txt" onClick={handleClick}>
+                  <p className="nav-contact-txt-wide">KONTAKT</p>
+                  <p className="nav-contact-txt-narrow">
+                    <BiPhoneCall className="phone" />
+                  </p>
+                </div>
 
-              <div className={`nav-contact-bg ${isClicked ? "clickedBg" : ""}`}>
-                <a
-                  className={`nav-contact-item ${isClicked ? "clicked" : ""}`}
-                  href="tel:+48.782.243.640"
+                <div
+                  className={`nav-contact-bg ${isClicked ? "clickedBg" : ""}`}
                 >
-                  <img
-                    className="nav-contact-item-img"
-                    src={phone}
-                    alt="phone icon"
-                  />
-                  <h4 className="force-inline">782 243 640</h4>
-                </a>
-                <a
-                  className={`nav-contact-item ${isClicked ? "clicked" : ""}`}
-                  href="mailto:queistal@gmail.com"
-                >
-                  <img
-                    className="nav-contact-item-img off"
-                    src={mail}
-                    alt="e-mail icon"
-                  />
-                  <h4>queistal@gmail.com</h4>
-                </a>
+                  <a
+                    className={`nav-contact-item ${isClicked ? "clicked" : ""}`}
+                    href="tel:+48.782.243.640"
+                  >
+                    <img
+                      className="nav-contact-item-img"
+                      src={phone}
+                      alt="phone icon"
+                    />
+                    <h4 className="force-inline">782 243 640</h4>
+                  </a>
+                  <a
+                    className={`nav-contact-item ${isClicked ? "clicked" : ""}`}
+                    href="mailto:queistal@gmail.com"
+                  >
+                    <img
+                      className="nav-contact-item-img off"
+                      src={mail}
+                      alt="e-mail icon"
+                    />
+                    <h4>queistal@gmail.com</h4>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -116,14 +120,8 @@ const Hero = () => {
             <div className="hero_container-img">
               <div className="hero_container-triangle-upper"></div>
               <picture>
-                <source
-                  srcSet={heroMobile}
-                  media="(max-width: 750px)"
-                />
-                <img
-                  src={hero}
-                  alt="Description of the image"
-                />
+                <source srcSet={heroMobile} media="(max-width: 750px)" />
+                <img src={hero} alt="Description of the image" loading="lazy"/>
               </picture>
               <div className="hero_container-txt">
                 <h3>Projekt</h3>

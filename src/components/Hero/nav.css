@@ -4,7 +4,15 @@
   z-index: 100;
 }
 
+.nav_static-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .nav_static {
+  width: 100%;
+  max-width: 1800px;
   padding: 2.5rem 2rem;
   height: 7rem;
   display: flex;
@@ -24,13 +32,22 @@
 
 /* NAV POP */
 
+.nav_pop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
 .nav_pop-inner {
+  width: 100%;
+  max-width: 1800px;
+  height: 4.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.795);
-  height: 4.5rem;
   transition: 0.3s ease;
 }
 
